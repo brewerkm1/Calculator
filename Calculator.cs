@@ -13,20 +13,20 @@ namespace Calculator
 
         public string FullName => $"{FirstName} {LastName}";
 
-        public List<GradeItem> Grades { get; private set; }
+        //public List<GradeItem> Grades { get; private set; }
 
         public Calculator(string firstName, string lastName)
         {
             FirstName = firstName;
             LastName = lastName;
-            Grades = new List<GradeItem>();
+          //  Grades = new List<GradeItem>();
         }
 
-        public void AddGrade(string name, byte grade) => Grades.Add(new GradeItem(name, grade));
+//        public void AddGrade(string name, byte grade) => Grades.Add(new GradeItem(name, grade));
 
         // Search for all grade items to find the first one with the right name
         // Remove the grade item if found
-        public void RemoveGrade(string name) => Grades.Remove(Grades.Find(x => (x.Name == name)));
+  //      public void RemoveGrade(string name) => Grades.Remove(Grades.Find(x => (x.Name == name)));
 
 
     }
